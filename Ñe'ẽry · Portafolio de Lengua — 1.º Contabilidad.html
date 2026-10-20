@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ñe'ẽry · Portafolio de Lengua — 1.º Contabilidad · Colegio Politécnico Johannes Gutenberg</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<style>
+  :root{
+    --bg:#0c0c0e;
+    --bg-raised:#141416;
+    --border:#28282b;
+    --text:#f2f0ea;
+    --muted:#8d8c92;
+    --accent:#c1702f;
+  }
+  html{scroll-behavior:smooth; color-scheme:dark;}
+  body{font-family:'Inter',sans-serif; background:var(--bg); color:var(--text);}
+  .font-display{font-family:'Playfair Display', serif;}
+  .border-hair{border-color:var(--border);}
+  .text-muted{color:var(--muted);}
+  .text-accent{color:var(--accent);}
+  .bg-raised{background:var(--bg-raised);}
+  .tab-active{background:var(--text); color:var(--bg);}
+  .tab-inactive{background:transparent; color:var(--muted);}
+  ::selection{background:var(--accent); color:#0c0c0e;}
+  .focus-ring:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+  @media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important;} }
+  .row-hover{transition:background-color .2s ease;}
+  .row-hover:hover{background:var(--bg-raised);}
+  .eyebrow{letter-spacing:.14em; font-weight:600;}
+  .num{font-variant-numeric:tabular-nums; font-feature-settings:"tnum";}
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="sticky top-0 z-50 bg-[#0c0c0e]/90 backdrop-blur border-b border-hair">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="flex items-center justify-between h-[68px]">
+
+      <a href="#inicio" class="flex items-baseline gap-2 min-w-0 focus-ring rounded-sm">
+        <span class="font-display text-lg font-semibold text-[var(--text)] tracking-tight">Ñe'ẽry</span>
+        <span class="hidden sm:inline text-[11px] text-muted eyebrow uppercase truncate">· 1.º Contabilidad · J. Gutenberg</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-[13px] eyebrow uppercase text-muted">
+        <a href="#proyectos" class="hover:text-[var(--text)] transition-colors focus-ring rounded-sm">Proyectos</a>
+        <a href="#destacado" class="hover:text-[var(--text)] transition-colors focus-ring rounded-sm">Destacado</a>
+        <a href="#equipo" class="hover:text-[var(--text)] transition-colors focus-ring rounded-sm">Equipo</a>
+        <a href="#sobre" class="hover:text-[var(--text)] transition-colors focus-ring rounded-sm">Sobre</a>
+        <a href="#contacto" class="hover:text-[var(--text)] transition-colors focus-ring rounded-sm">Contacto</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="langToggle" type="button" aria-label="Cambiar idioma de la interfaz" aria-pressed="false"
+          class="focus-ring flex items-center gap-1 rounded-full border border-hair px-1 py-1 text-[11px] font-bold">
+          <span id="langES" class="px-2 py-0.5 rounded-full bg-[var(--text)] text-[#0c0c0e]">ES</span>
+          <span id="langGN" class="px-2 py-0.5 rounded-full text-muted">GN</span>
+        </button>
+        <button id="mobileMenuBtn" type="button" aria-label="Abrir menú" class="md:hidden focus-ring p-2 rounded-md border border-hair">
+          <i data-lucide="menu" class="w-4 h-4 text-[var(--text)]"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav id="mobileMenu" class="hidden md:hidden border-t border-hair px-5 py-4 space-y-3 text-[13px] eyebrow uppercase text-muted">
+    <a href="#proyectos" class="block py-1.5">Proyectos</a>
+    <a href="#destacado" class="block py-1.5">Destacado</a>
+    <a href="#equipo" class="block py-1.5">Equipo</a>
+    <a href="#sobre" class="block py-1.5">Sobre</a>
+    <a href="#contacto" class="block py-1.5">Contacto</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="inicio" class="max-w-6xl mx-auto px-5 sm:px-8 pt-16 pb-14 sm:pt-24 sm:pb-20 border-b border-hair">
+  <p class="eyebrow uppercase text-[12px] text-muted mb-6">Lengua · Castellano · Guaraní · 2026</p>
+  <h1 class="font-display text-[2.6rem] sm:text-6xl lg:text-7xl leading-[0.98] font-semibold uppercase mb-8 max-w-3xl">
+    Nuestros proyectos de lengua.
+  </h1>
+  <p class="text-muted text-base sm:text-lg leading-relaxed max-w-xl mb-3">
+    Portafolio del 1.º Curso de Bachillerato Técnico en Contabilidad del Colegio Politécnico Johannes Gutenberg, presentado ante el Ministerio de Educación y Ciencias (MEC).
+  </p>
+  <p class="text-[var(--text)] text-base sm:text-lg leading-relaxed max-w-xl mb-10">
+    <span class="font-semibold">Siete miradas sobre una misma obra.</span> Un espacio para reunir nuestros análisis de lectura de la novela <span class="italic">Ione</span>, de Mario Escobar.
+  </p>
+
+  <div class="flex flex-wrap items-center gap-6 border-t border-hair pt-8">
+    <div class="flex items-baseline gap-2">
+      <span class="font-display text-3xl sm:text-4xl font-semibold num">07</span>
+      <span class="text-sm text-muted">análisis reales reunidos<br class="hidden sm:block"> en un solo lugar</span>
+    </div>
+    <span class="hidden sm:block w-px h-10 bg-[var(--border)]"></span>
+    <a href="#proyectos" class="focus-ring inline-flex items-center gap-2 text-sm font-semibold text-[var(--text)] border border-hair rounded-full px-5 py-2.5 hover:border-text transition-colors">
+      Ver proyectos <span class="text-accent">↗</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ PROYECTOS ============ -->
+<section id="proyectos" class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+  <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-10">
+    <div>
+      <p class="eyebrow uppercase text-[12px] text-accent mb-3">Portafolio · 2026</p>
+      <h2 class="font-display text-3xl sm:text-4xl font-semibold">Proyectos</h2>
+    </div>
+    <div class="flex flex-wrap gap-2 text-[12px] eyebrow uppercase" role="tablist" aria-label="Filtrar proyectos por enfoque">
+      <button data-filter="todos" class="filter-btn focus-ring tab-active rounded-full px-4 py-2 transition-colors" role="tab" aria-selected="true">Todos</button>
+      <button data-filter="lenguaje" class="filter-btn focus-ring tab-inactive border border-hair rounded-full px-4 py-2 transition-colors" role="tab" aria-selected="false">Lenguaje</button>
+      <button data-filter="estructura" class="filter-btn focus-ring tab-inactive border border-hair rounded-full px-4 py-2 transition-colors" role="tab" aria-selected="false">Estructura</button>
+      <button data-filter="personajes" class="filter-btn focus-ring tab-inactive border border-hair rounded-full px-4 py-2 transition-colors" role="tab" aria-selected="false">Personajes</button>
+    </div>
+  </div>
+
+  <div id="cardGrid" class="divide-y divide-[var(--border)] border-t border-b border-hair">
+
+    <!-- 01 -->
+    <article data-category="estructura" class="project-row row-hover grid sm:grid-cols-[auto_1fr_auto] gap-x-8 gap-y-3 items-start py-7 px-2">
+      <span class="font-display num text-2xl text-muted">01</span>
+      <div>
+        <div class="flex flex-wrap items-center gap-2 mb-2 text-[11px] eyebrow uppercase">
+          <span class="text-accent">Ione</span>
+          <span class="text-muted">· Tiempo</span>
+        </div>
+        <h3 class="font-display text-xl font-semibold mb-1.5">Análisis del tiempo de IONE</h3>
+        <p class="text-sm text-muted leading-relaxed max-w-lg">Orden, duración, frecuencia, analepsis, prolepsis y ritmo narrativo de la novela.</p>
+        <p class="text-xs text-muted mt-3">Autora: Ángeles Avalos</p>
+      </div>
+      <a href="#destacado" class="ver-proyecto focus-ring self-center text-sm font-semibold text-[var(--text)] whitespace-nowrap hover:text-accent transition-colors">Ver proyecto <span class="text-accent">↗</span></a>
+    </article>
+
+    <!-- 02 -->
+    <article data-category="personajes" class="project-row row-hover grid sm:grid-cols-[auto_1fr_auto] gap-x-8 gap-y-3 items-start py-7 px-2">
+      <span class="font-display num text-2xl text-muted">02</span>
+      <div>
+        <div class="flex flex-wrap items-center gap-2 mb-2 text-[11px] eyebrow uppercase">
+          <span class="text-accent">Ione</span>
+          <span class="text-muted">· Ideológico</span>
+        </div>
+        <h3 class="font-display text-xl font-semibold mb-1.5">Análisis ideológico de IONE</h3>
+        <p class="text-sm text-muted leading-relaxed max-w-lg">Valores, relaciones de poder, pensamiento crítico y visión del mundo que transmite la obra.</p>
+        <p class="text-xs text-muted mt-3">Equipo: Aylen Figueredo, Luz Mass</p>
+      </div>
+      <a href="#" class="ver-proyecto focus-ring self-center text-sm font-semibold text-[var(--text)] whitespace-nowrap hover:text-accent transition-colors">Ver proyecto <span class="text-accent">↗</span></a>
+    </article>
+
+    <!-- 03 -->
+    <article data-category="personajes" class="project-row row-hover grid sm:grid-cols-[auto_1fr_auto] gap-x-8 gap-y-3 items-start py-7 px-2">
+      <span class="font-display num text-2xl text-muted">03</span>
+      <div>
+        <div class="flex flex-wrap items-center gap-2 mb-2 text-[11px] eyebrow uppercase">
+          <span class="text-accent">Ione</span>
+          <span class="text-muted">· Psicológico</span>
+        </div>
+        <h3 class="font-display text-xl font-semibold mb-1.5">Análisis psicológico del protagonista</h3>
+        <p class="text-sm text-muted leading-relaxed max-w-lg">Deseos, conflictos, temores y mecanismos de defensa de Tes (Teseo).</p>
+        <p class="text-xs text-muted mt-3">Equipo: Sofía Mendieta, Brenda González</p>
+      </div>
+      <a href="#" class="ver-proyecto focus-ring self-center text-sm font-semibold text-[var(--text)] whitespace-nowrap hover:text-accent transition-colors">Ver proyecto <span class="text-accent">↗</span></a>
+    </article>
+
+    <!-- 04 -->
+    <article data-category="personajes" class="project-row row-hover grid sm:grid-cols-[auto_1fr_auto] gap-x-8 gap-y-3 items-start py-7 px-2">
+      <span class="font-display num text-2xl text-muted">04</span>
+      <div>
+        <div class="flex flex-wrap items-center gap-2 mb-2 text-[11px] eyebrow uppercase">
+          <span class="text-accent">Ione</span>
+          <span class="text-muted">· Personajes</span>
+        </div>
+        <h3 class="font-display text-xl font-semibold mb-1.5">Análisis de personajes de IONE</h3>
+        <p class="text-sm text-muted leading-relaxed max-w-lg">Dimensiones físicas, psicológicas y sociales de Teseo, Elías, Patas Largas y Frank.</p>
+        <p class="text-xs text-muted mt-3">Equipo: Johana, Paloma</p>
+      </div>
+      <a href="#" class="ver-proyecto focus-ring self-center text-sm font-semibold text-[var(--text)] whitespace-nowrap hover:text-accent transition-colors">Ver proyecto <span class="text-accent">↗</span></a>
+    </article>
+
+    <!-- 05 -->
+    <article data-category="lenguaje" class="project-row row-hover grid sm:grid-cols-[auto_1fr_auto] gap-x-8 gap-y-3 items-start py-7 px-2">
+      <span class="font-display num text-2xl text-muted">05</span>
+      <div>
+        <div class="flex flex-wrap items-center gap-2 mb-2 text-[11px] eyebrow uppercase">
+          <span class="text-accent">Ione</span>
+          <span class="text-muted">· Simbólico</span>
+        </div>
+        <h3 class="font-display text-xl font-semibold mb-1.5">Análisis simbólico de IONE</h3>
+        <p class="text-sm text-muted leading-relaxed max-w-lg">Lectura hermenéutica de los símbolos de la obra: las montañas, el pueblo de Ione y la noche.</p>
+        <p class="text-xs text-muted mt-3">Equipo: Mia Gonzalez, Angeles Benitez</p>
+      </div>
+      <a href="#" class="ver-proyecto focus-ring self-center text-sm font-semibold text-[var(--text)] whitespace-nowrap hover:text-accent transition-colors">Ver proyecto <span class="text-accent">↗</span></a>
+    </article>
+
+    <!-- 06 -->
+    <article data-category="lenguaje" class="project-row row-hover grid sm:grid-cols-[auto_1fr_auto] gap-x-8 gap-y-3 items-start py-7 px-2">
+      <span class="font-display num text-2xl text-muted">06</span>
+      <div>
+        <div class="flex flex-wrap items-center gap-2 mb-2 text-[11px] eyebrow uppercase">
+          <span class="text-accent">Ione</span>
+          <span class="text-muted">· Estilo</span>
+        </div>
+        <h3 class="font-display text-xl font-semibold mb-1.5">Recursos lingüísticos y estilo</h3>
+        <p class="text-sm text-muted leading-relaxed max-w-lg">Registro, sintaxis, figuras retóricas y ritmo de la prosa de Mario Escobar.</p>
+        <p class="text-xs text-muted mt-3">Equipo: Sahiara, Fiorella</p>
+      </div>
+      <a href="#" class="ver-proyecto focus-ring self-center text-sm font-semibold text-[var(--text)] whitespace-nowrap hover:text-accent transition-colors">Ver proyecto <span class="text-accent">↗</span></a>
+    </article>
+
+    <!-- 07 -->
+    <article data-category="estructura" class="project-row row-hover grid sm:grid-cols-[auto_1fr_auto] gap-x-8 gap-y-3 items-start py-7 px-2">
+      <span class="font-display num text-2xl text-muted">07</span>
+      <div>
+        <div class="flex flex-wrap items-center gap-2 mb-2 text-[11px] eyebrow uppercase">
+          <span class="text-accent">Ione</span>
+          <span class="text-muted">· Estructura</span>
+        </div>
+        <h3 class="font-display text-xl font-semibold mb-1.5">Análisis estructural de IONE</h3>
+        <p class="text-sm text-muted leading-relaxed max-w-lg">Los 67 capítulos y sus tres partes: "El visitante", "Místicus" y "La verdad sobre la peste".</p>
+        <p class="text-xs text-muted mt-3">Equipo: Solange Santacruz, Danilo Warkentin</p>
+      </div>
+      <a href="#" class="ver-proyecto focus-ring self-center text-sm font-semibold text-[var(--text)] whitespace-nowrap hover:text-accent transition-colors">Ver proyecto <span class="text-accent">↗</span></a>
+    </article>
+
+  </div>
+
+  <p id="emptyState" class="hidden text-center text-muted text-sm py-16">No hay proyectos en esta categoría todavía.</p>
+</section>
+
+<!-- ============ DESTACADO ============ -->
+<section id="destacado" class="border-y border-hair bg-raised">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+    <p class="eyebrow uppercase text-[12px] text-accent mb-3">Proyecto destacado</p>
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-10 max-w-xl">El informe más completo del equipo</h2>
+
+    <div class="grid lg:grid-cols-5 gap-10 items-start">
+      <div class="lg:col-span-2">
+        <div class="aspect-[4/5] border border-hair rounded-sm bg-[#0c0c0e] p-6 flex flex-col justify-between">
+          <div>
+            <p class="eyebrow uppercase text-[10px] text-muted mb-1">C. P. J. G</p>
+            <p class="text-[11px] text-muted mb-6">Informe Literario</p>
+            <p class="font-display text-2xl font-semibold leading-tight mb-1">Análisis del<br>Tiempo</p>
+          </div>
+          <div class="text-[11px] text-muted leading-relaxed">
+            De la novela IONE de Mario Escobar<br>
+            Proyecto de Lectura
+            <div class="h-px bg-[var(--border)] my-3"></div>
+            Alumna: Ángeles Avalos<br>
+            Profesora: Rosmarí Denís<br>
+            Curso: 1.º Contabilidad<br>
+            Año: 2026
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-3">
+        <h3 class="font-display text-2xl font-semibold mb-3">Análisis del tiempo narrativo en IONE</h3>
+        <p class="text-sm text-muted leading-relaxed mb-6 max-w-xl">
+          Estudia cómo Mario Escobar organiza el tiempo de la novela: el punto de partida "in media res" en el Año 7 de la Nueva Era, los flashbacks que explican la pérdida de los padres de Tes, y el contraste entre elipsis, escenas y pausas que acelera el ritmo hacia el clímax en Mysticus.
+        </p>
+        <dl class="grid grid-cols-3 gap-4 mb-7 border-y border-hair py-5 text-sm">
+          <div>
+            <dt class="text-[11px] text-muted mb-1">Alumna</dt>
+            <dd class="font-semibold">Ángeles Avalos</dd>
+          </div>
+          <div>
+            <dt class="text-[11px] text-muted mb-1">Curso</dt>
+            <dd class="font-semibold">1.º Contabilidad</dd>
+          </div>
+          <div>
+            <dt class="text-[11px] text-muted mb-1">Asignatura</dt>
+            <dd class="font-semibold">Lengua y Lit. Castellana</dd>
+          </div>
+        </dl>
+        <button class="ver-proyecto focus-ring inline-flex items-center gap-2 text-sm font-semibold text-[#0c0c0e] bg-[var(--text)] rounded-full px-5 py-2.5 hover:bg-accent hover:text-[#0c0c0e] transition-colors">
+          Abrir informe completo <span>↗</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EQUIPO ============ -->
+<section id="equipo" class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+  <p class="eyebrow uppercase text-[12px] text-accent mb-3">Equipo y docentes</p>
+  <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-12 max-w-xl">Quiénes hicimos este portafolio</h2>
+
+  <div class="mb-12">
+    <p class="eyebrow uppercase text-[11px] text-muted mb-4">Docente guía</p>
+    <p class="font-display text-lg font-semibold">Profesora Rosmarí Denís</p>
+    <p class="text-sm text-muted">Cátedra de Lengua y Literatura Castellana</p>
+  </div>
+
+  <div class="mb-12">
+    <p class="eyebrow uppercase text-[11px] text-muted mb-4">Equipo coordinador — 1.º Contabilidad</p>
+    <div class="flex flex-wrap gap-x-8 gap-y-2 text-sm">
+      <span>Danilo Warkentin</span>
+      <span>Solange Santacruz</span>
+      <span>Sofía Ferreira</span>
+      <span>Juan Figueredo</span>
+      <span>Helen Segovia</span>
+      <span>Giovanna Lauro</span>
+    </div>
+  </div>
+
+  <div>
+    <p class="eyebrow uppercase text-[11px] text-muted mb-4">Autores de cada análisis</p>
+    <div class="flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted">
+      <span>Mia Gonzalez</span><span>Angeles Benitez</span><span>Sahiara</span><span>Fiorella</span>
+      <span>Ángeles Avalos</span><span>Aylen Figueredo</span><span>Luz Mass</span>
+      <span>Johana</span><span>Paloma</span><span>Sofía Mendieta</span><span>Brenda González</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section id="sobre" class="border-t border-hair bg-raised">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20 max-w-2xl">
+    <p class="eyebrow uppercase text-[12px] text-accent mb-3">Sobre</p>
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-5">Una colección de trabajos.</h2>
+    <p class="text-sm text-muted leading-relaxed mb-3">
+      Esta página funciona como un portafolio digital de los proyectos de Lengua del 1.º Curso de Bachillerato Técnico en Contabilidad, presentado como respaldo documental ante el Ministerio de Educación y Ciencias (MEC). Cada fila abre el documento correspondiente.
+    </p>
+    <p class="text-sm text-muted leading-relaxed">La colección puede seguir creciendo durante el año, incorporando nuevos trabajos en guaraní y castellano.</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contacto" class="border-t border-hair">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-14">
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-8 mb-10">
+      <div>
+        <p class="font-display text-xl font-semibold mb-1">Ñe'ẽry · Proyecto de Lengua</p>
+        <p class="text-sm text-muted">Colegio Politécnico Johannes Gutenberg · Bachillerato Técnico en Contabilidad</p>
+      </div>
+      <div class="text-sm text-muted space-y-1">
+        <p class="flex items-center gap-2"><i data-lucide="mail" class="w-3.5 h-3.5"></i> castellano.guarani@jgutenberg.edu.py</p>
+        <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Asunción, Paraguay</p>
+      </div>
+    </div>
+    <div class="border-t border-hair pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted">
+      <p>2026 · Portafolio escolar</p>
+      <p class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-accent"></i> Documento de presentación oficial — MEC</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  lucide.createIcons();
+
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const rows = document.querySelectorAll('.project-row');
+  const emptyState = document.getElementById('emptyState');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => { b.classList.remove('tab-active'); b.classList.add('tab-inactive'); b.setAttribute('aria-selected','false'); });
+      btn.classList.add('tab-active'); btn.classList.remove('tab-inactive'); btn.setAttribute('aria-selected','true');
+      const filter = btn.dataset.filter;
+      let visible = 0;
+      rows.forEach(row => {
+        const match = filter === 'todos' || row.dataset.category === filter;
+        row.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+      emptyState.classList.toggle('hidden', visible !== 0);
+    });
+  });
+
+  document.querySelectorAll('.ver-proyecto').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      if (btn.getAttribute('href') === '#' || !btn.getAttribute('href')) e.preventDefault();
+      document.getElementById('destacado').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  const langToggle = document.getElementById('langToggle');
+  const langES = document.getElementById('langES');
+  const langGN = document.getElementById('langGN');
+  let isGuarani = false;
+  const strings = {
+    es: { navProyectos: 'Proyectos', navDestacado: 'Destacado', navEquipo: 'Equipo', navSobre: 'Sobre', navContacto: 'Contacto' },
+    gn: { navProyectos: 'Tembiapokuéra', navDestacado: 'Iporãvéva', navEquipo: 'Aranduka\'yguakuéra', navSobre: 'Ñemoha\'ãnga', navContacto: 'Ñomongeta' }
+  };
+  function applyLang(lang){
+    document.querySelectorAll('nav a[href="#proyectos"]').forEach(el => el.textContent = strings[lang].navProyectos);
+    document.querySelectorAll('nav a[href="#destacado"]').forEach(el => el.textContent = strings[lang].navDestacado);
+    document.querySelectorAll('nav a[href="#equipo"]').forEach(el => el.textContent = strings[lang].navEquipo);
+    document.querySelectorAll('nav a[href="#sobre"]').forEach(el => el.textContent = strings[lang].navSobre);
+    document.querySelectorAll('nav a[href="#contacto"]').forEach(el => el.textContent = strings[lang].navContacto);
+  }
+  langToggle.addEventListener('click', () => {
+    isGuarani = !isGuarani;
+    langToggle.setAttribute('aria-pressed', String(isGuarani));
+    if (isGuarani) {
+      langES.classList.remove('bg-[var(--text)]','text-[#0c0c0e]'); langES.classList.add('text-muted');
+      langGN.classList.add('bg-[var(--text)]','text-[#0c0c0e]'); langGN.classList.remove('text-muted');
+      applyLang('gn');
+    } else {
+      langGN.classList.remove('bg-[var(--text)]','text-[#0c0c0e]'); langGN.classList.add('text-muted');
+      langES.classList.add('bg-[var(--text)]','text-[#0c0c0e]'); langES.classList.remove('text-muted');
+      applyLang('es');
+    }
+  });
+</script>
+</body>
+</html>
